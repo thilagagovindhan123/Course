@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTER A COURSE</title>
+    <style>
+        body{
+           
+            background: red;
+            text-align:center;
+            
+        }
+        form{
+            margin: auto;
+            padding: 20px;
+            width: 400px;
+            background-color: rgb(236, 241, 245);
+        }
+
+        input, select, button{
+            width: 90%;
+            padding:10px;
+            margin:10px;
+        }
+        button{
+            background-color: rgb(109, 162, 29);
+            color: rgb(17, 16, 15);
+            font-weight:bold;
+            font-size: medium;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color:rgb(76, 76, 197)">Clickstart with exciting course</h2>
+    <form action="http://localhost:8080/courses/register" method="post">
+    <label for="name">Enter your name:</label>
+    <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+    <label for="emailId">Enter your emailId:</label> 
+    <input type="email" name="emailId" placeholder="Enter your emailId"><br><br>
+
+    <label for="Course">Choose your Coursename:</label>
+    <select name="courseName" id="course">
+        <option value="java">Java</option>
+        <option value="python">python</option>
+        <option value="Spring Boot">Spring Boot</option>
+        <option value="php">Php</option>
+    </select>
+    <button onclick="bill()">Submit</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+
+<html lang="en">
+<head>
+   
+    <script type="text/javascript" src="myscript.js"></script>
+    <style>
+        
+        body{
+            padding: 50px;
+        }
+        td{
+            color:rgb(8, 8, 8);
+            border-radius:5px;
+            background-color: aqua ;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+            
+        }
+        th{
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 15px;
+        }
+        h1{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 300px;
+            font-size: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Available Course</h1>
+    <table align="center" border="1" style="background-color: rgb(11, 11, 11);">
+        <tr align="center" style="background-color: rgb(245, 245, 245);">
+        <th width="150">Coure Id</th>
+        <th width="450">Course Name</th>
+        <th width="500">Trainer</th>
+        <th width="450">Duration in week</th>
+        </tr>
+        <tbody algin="center" id=coursetable></tbody> 
+         </table>
+        <script type="text/javascript">
+            window.onload=function(){
+                showcourses();
+            };
+        </script>
+
+   
+</body>
+</html>
