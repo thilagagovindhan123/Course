@@ -1,5 +1,5 @@
 function showcourses(){
-   fetch("http://localhost:8080/courses")
+   fetch("http://localhost:8081/courses")
    .then((response) => response.json()) 
    .then((courses) => {
     const dataTable=document.getElementById("coursetable")
@@ -16,7 +16,7 @@ function showcourses(){
    
 }
 function showencourses(){
-   fetch("http://localhost:8080/courses/enrolled")
+   fetch("http://localhost:8081/courses/enrolled")
    .then((response) => response.json()) 
    .then((students) => {
     const dataTable=document.getElementById("enrolltable")
@@ -26,13 +26,15 @@ function showencourses(){
          <td>${student.name}</td>
          <td>${student.emailId}</td>
          <td>${student.courseName}</td>
-         
+         <td><button onclick="deleteStudent(${student.id})">Delete</button></td>
         </tr>`;
         dataTable.innerHTML+=row;
     });
    });
    
 }
+
+    
 function bill(){
    alert("successfully registered!");
 }
